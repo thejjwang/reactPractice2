@@ -1,0 +1,13 @@
+{
+    "todos": [
+        {"id": 1,
+         "text": "Homework"
+        },
+        {"id": 2,
+         "text": "Gym"
+        },
+        {"id": 3,
+         "text": "Party"
+        }
+    ]
+}

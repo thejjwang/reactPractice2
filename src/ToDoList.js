@@ -5,7 +5,8 @@ const ToDoList = () => {
     const [todos, setTodos] = useState([]);
     const [inputValue, setInputValue] = useState('');
 
-    function addToDo(){
+
+    const addToDo = () => {
     if (inputValue !== ''){
         // set 
         setTodos([...todos, inputValue]);
@@ -13,15 +14,14 @@ const ToDoList = () => {
         setInputValue('')
     }
 }  
-
-    function deleteToDo(index){
+    const deleteToDo = (index) => {
         // couldnt set newArr directly to the .splice 
         const newTodosArr = [...todos];
         newTodosArr.splice(index, 1);
         setTodos(newTodosArr);
    
     }
-    function handleChange(e){
+    const handleChange = (e) => {
         setInputValue(e.target.value);
     }
 
