@@ -31,7 +31,7 @@ const ToDoList = () => {
             <button onClick={addToDo}>Add</button>
             <ul>
                 {todos.map((todo, index) => (
-                    <ToDoListItem todos={todos} deleteToDo={deleteToDo} key={index}/>
+                    <ToDoListItem todo={todo} deleteToDo={() => deleteToDo(index)} key={index}/>
                 ))}
             </ul>
         </>
